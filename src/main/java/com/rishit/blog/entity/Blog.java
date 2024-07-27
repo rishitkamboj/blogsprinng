@@ -20,4 +20,6 @@ public class Blog {
     @NonNull
     private String content;
     private LocalDateTime date;
+
+    private boolean done;
 }
