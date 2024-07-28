@@ -39,6 +39,21 @@ public class UserService {
         return userrepo.findByUsername(username);
     }
 
+    public List<User> findAllUsers() {
+        return userrepo.findAll();
+    }
+    public User saveAdmin(User user){
+        User u=findUserByUsername(user.getUsername());
+        if(u==null){
+        user.setPassword(bcrypt.encode(user.getPassword()));
+        user.setRoles(List.of("ADMIN","USER"));
+        return userrepo.save(user);}
+        u.setRoles(List.of("ADMIN","USER"));
+        userrepo.save(u);
+        return u;
+    }
+
+
 
 
 
