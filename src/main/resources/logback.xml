@@ -1,0 +1,19 @@
+<!--<configuration>-->
+
+<!--     <appender name="consoleappender" class="ch.qos.logback.core.ConsoleAppender">-->
+
+<!--     </appender>-->
+<!--    <appender name="fileappender" class="ch.qos.logback.core.FileAppender">-->
+<!--             <file>-->
+<!--                 blogApp.log-->
+<!--                 &lt;!&ndash; Justify the path where do u want this&ndash;&gt;-->
+<!--             </file>-->
+<!--    </appender>-->
+
+
+<!--    <root level="INFO">-->
+<!--         <appender-ref  ref="consoleappender" />-->
+<!--        <appender-ref ref="fileappender"-->
+<!--    </root>-->
+
+<!--</configuration>-->
